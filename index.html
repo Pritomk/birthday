@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Happy Birthday Puchuu!</title>
@@ -66,7 +67,7 @@
     .photo-container img {
       max-width: 250px;
       border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .message {
@@ -77,8 +78,15 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .sprinkle {
@@ -96,6 +104,7 @@
         opacity: 1;
         transform: translateY(0) scale(1);
       }
+
       100% {
         opacity: 0;
         transform: translateY(300px) scale(0.5);
@@ -103,6 +112,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="box-container" id="boxWrapper" onclick="openBox()">
@@ -111,7 +121,9 @@
   </div>
 
   <div class="photo-container" id="surprise">
-    <img src="puchuu.jpg" alt="Puchuu's Photo" />
+    <img src="pic.jpg" alt="Pic Image"
+      style="max-width: 250px; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" />
+
     <div class="message">
       Happy birthday dear Puchuu... 🎉🎉🎂🎂<br>
       Many many happy returns of the day my princess...<br>
@@ -155,4 +167,5 @@
     }
   </script>
 </body>
+
 </html>
